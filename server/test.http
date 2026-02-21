@@ -1,0 +1,56 @@
+###
+
+# Login
+POST http://localhost:3001/api/sessions
+Content-Type: application/json
+
+{ 
+    "username": "user001", 
+    "password": "password" 
+}
+
+###
+
+## Checking if user is still logged in
+GET http://localhost:3001/api/sessions/current
+
+###
+
+## Logout
+DELETE http://localhost:3001/api/sessions/current
+
+
+### Get card by id
+GET http://localhost:3001/api/cards/51
+
+
+###
+
+## Get a random card
+POST http://localhost:3001/api/cards/draw
+
+###
+
+## verify a random card is correct
+POST http://localhost:3001/api/matches/current/verify
+Content-Type: application/json
+
+{
+    "index": -1
+}
+
+###
+
+## initialize a match
+POST http://localhost:3001/api/matches/init
+
+###
+
+## save a match
+POST http://localhost:3001/api/matches
+
+
+###
+
+## get all matches
+GET http://localhost:3001/api/matches

@@ -1,0 +1,178 @@
+body{
+    overflow-y: hidden;
+}
+
+div#profile{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+div#profile #user-info{
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f0f4f9;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
+}
+
+div#profile #user-info h1{
+    font-family: var(--primaryFont);
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+div#profile div#statistics{
+    width: 100%;
+}
+
+div#profile div#statistics h3#section{
+    border-bottom: 1px solid #ccc;
+    color: #b7babf;
+    letter-spacing: 1.7px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+div#profile div#statistics div{
+    border-radius: 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-family: var(--secondaryFont);
+}
+
+div#profile div#actions{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+div#profile button#home{
+    background-color: #8ad0ff;
+    color: #fff;
+    padding: 12px 15px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    margin-left: 5px;
+}
+
+div#profile button#home:hover{
+    opacity: .7;
+}
+
+div#profile div#matches-info {
+    position: relative;
+    width: 80vw;
+}
+
+div#profile div#matches-info h2#no-matches {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#profile div#matches-info{
+    padding: 20px 40px;
+    overflow-y: auto;
+}
+
+div#profile div#matches-info h2#title{
+    font-size: 40px;
+}
+
+article {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .2);
+    margin: 20px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+article .header{
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    cursor: pointer;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article .header i{
+    font-size: 25px;
+}
+
+.rounded{
+    border-radius: 20px;
+}
+
+article .header.won {
+    background-color: #d8ffe9;
+}
+
+article .header.lost {
+    background-color: #fbc6c0;
+}
+
+article .header h2{
+    font-size: 23px;
+}
+
+article .rounds{
+    padding: 0 15px;
+    display: flex;
+    align-items: baseline;
+    overflow-x: auto;
+}
+
+article .rounds .round{
+    padding: 0 30px;
+}
+
+article .rounds .round:not(article .rounds .round:last-child){
+    border-right: 1px solid #ccc;
+}
+
+article .rounds .round {
+    padding: 30px;
+    position: relative;
+
+}
+
+article .rounds .round h3, article .rounds .round p.possession{
+    text-align: center;
+}
+
+article .rounds .round .card{
+    margin-top: 20px;
+}
+
+article .rounds .round .card .misfortune{
+    display: none;
+}
+
+article .rounds .round.lost .card::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 2;
+}

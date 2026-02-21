@@ -1,0 +1,192 @@
+div#loginPage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+section{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#hero{
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('http://localhost:3001/static/images/cards/card48.jpeg');
+    background-size: 100% 100%;
+    background-position: center center; 
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, .3);
+}
+
+section#hero h1{
+    font-family: var(--primaryFont);
+    font-size: 70px;
+    letter-spacing: 6px;
+    color: #fff;
+    z-index: 1;
+    max-width: 80%;
+    text-align: center;
+    text-shadow: 0 1px 0 #17202A, 0 2px 0 #17202A,
+    0 7px 0 #17202A, 0 8px 0 #17202A,
+    0 11px 0 #17202A, 0 12px 0 #17202A;
+}
+
+section a{
+    color: #000;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+section a:hover{
+    opacity: .6;
+    transition: .2s ease-in-out;
+}
+
+form#loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form#loginForm h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form#loginForm div.field{
+    margin: 8px 0;
+}
+
+form#loginForm div.field label{
+    margin-bottom: 3px;
+}
+
+form#loginForm div.field div.field-wrapper{
+    position: relative;
+    margin-top: 3px;
+}
+
+form#loginForm div.field div.field-wrapper i{
+    position: absolute;
+    font-size: 20px;
+    margin-left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+form#loginForm div.field div.field-wrapper input{
+    width: 280px;
+    font-size: 16px;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #ccc;
+}
+
+form#loginForm input[type="submit"]{
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: var(--primaryColor);
+    color: #fff;
+    transition: .4s;
+}
+
+form#loginForm input[type="submit"]:hover{
+    opacity: .8;
+}
+
+button#logout{
+    background-color: #d63031;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button#logout:hover{
+    opacity: .7;
+}
+
+div#backdrop{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+div#modal{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background-color: #fff;
+    min-width: 400px;
+    max-width: 450px;
+    border-radius: 15px;
+}
+
+div#modal div#modal-header{
+    border-bottom: 1px solid #ccc;
+    padding: 17px 15px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#modal div#modal-header i{
+    font-size: 23px;
+    cursor: pointer;
+}
+
+div#modal div#modal-body{
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+div#modal div#modal-actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+div#modal div#modal-actions button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+div#modal div#modal-actions button:hover{
+    opacity: .8;
+}
+
+div#modal div#modal-actions button#btn-close{
+    background-color: gray;
+}
+
+div#modal div#modal-actions button#btn-confirm{
+    background-color: #d63031;
+}

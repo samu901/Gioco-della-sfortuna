@@ -1,0 +1,24 @@
+:root{
+  /* COLORS */
+  --primaryColor: #4db8ff;
+  --secondaryColor: #2ecc71;
+  /* FONTS */
+  --primaryFont: 'WDXL Lubrifont TC';
+  --secondaryFont: 'Asta Sans';
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--secondaryFont), sans-serif;
+}
+
+.noselect{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}

@@ -1,0 +1,42 @@
+div#not-found{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+div#not-found div#wrapper{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+div#not-found button {
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: var(--primaryColor);
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+div#not-found button:hover{
+    opacity: .8;
+}
+
+div#not-found div#background{
+    position: absolute;
+    clip-path: polygon(70% 0, 100% 0, 100% 100%, 60% 100%);
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('http://localhost:3001/static/images/cards/card35.jpeg');
+    background-position: center center;
+    background-size: cover;
+}

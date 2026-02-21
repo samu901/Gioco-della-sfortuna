@@ -1,0 +1,95 @@
+body{
+    overflow-y: auto;
+}
+div#rules-wrapper h1{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: var(--primaryFont);
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+p#prelude{
+    line-height: 25px;
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 50px;
+}
+
+div#rules{
+    margin-top: 50px;
+}
+
+div.rule{
+    display: flex;
+}
+
+div.rule:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+div.rule:nth-child(odd) div.info{
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+div.rule:nth-child(even) div.info{
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+
+div.rule div.info{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font-family: var(--primaryFont);
+    color: #fff;
+    background-size: cover;
+    background-position: center center;
+}
+
+div.rule div.text{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 20px 40px;
+    line-height: 25px;
+    font-size: 20px;
+    text-align: justify;
+}   
+
+div.rule:nth-child(odd) div.info h2{
+    transform: rotate(20deg);   
+}
+
+div.rule:nth-child(even) div.info h2{
+    transform: rotate(-20deg);   
+}
+
+div#rules-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#rules-wrapper button {
+    margin: 60px;
+    font-size: 24px;
+    color: #fff;
+    background-color: var(--primaryColor);
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+div#rules-wrapper button:hover{
+    opacity: .8;
+}

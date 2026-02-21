@@ -1,0 +1,19 @@
+div.alert{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 7px 0;
+    
+}
+
+div.alert[type="success"] {
+    background-color: var(--primaryColor);
+}
+
+div.alert[type="warning"] {
+    background-color: #f39c12;
+}
+
+div.alert[type="danger"] {
+    background-color: #e74c3c;
+}

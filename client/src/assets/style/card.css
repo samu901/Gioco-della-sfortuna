@@ -1,0 +1,66 @@
+div.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+div#my-cards{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+div#my-cards div.card{
+    margin: 0 10px;
+}
+
+div.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .5);
+    width: max-content;
+}
+
+div.card img{
+    width: 160px;
+    height: 160px;
+    border: 1px solid #ccc;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-user-drag: none;
+}
+
+div.card h2{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.card div.misfortune{
+    position: absolute;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--secondaryColor);
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 45px;
+    text-align: center;
+    font-size: 15px;
+    display: block;
+}
+
+button.selector{
+    text-overflow: hidden;
+    padding: 5px;
+    cursor: pointer;
+}
