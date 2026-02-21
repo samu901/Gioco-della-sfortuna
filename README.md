@@ -1,5 +1,8 @@
 # "Stuff happens"
 
+## Description
+The game consists on playing matches where the user receives three cards representing unlucky situations and that are ordered by a misfortune index. Then the user receive per each turn a card with an unknown misfortune index and he has to guess what is it's index putting the card in the correct order. The match ends if the user misses three card (the user lose) or if the user correctly guess three cards (the user wins).
+
 ## React Client Application Routes
 
 - Route `/`: homepage, from here is it possible to access to the other application's pages.
